@@ -1,9 +1,13 @@
 use std::ops::Range;
 
+/// # simple_func
+/// これはシンプルな関数で、与えられた数値を変更することなくそのまま返却します。
 pub fn simple_func(data: i32) -> i32 {
     data
 }
 
+/// # my_func
+/// この関数は、指定された範囲の各値に対して、渡された関数を適用し、その結果を Vec<i32> 配列として返却します。 
 pub fn my_func(range: Range<i32>, func: Box<dyn Fn(i32) -> i32>) -> Vec<i32> {
     let mut res = Vec::new();
     for i in range {
