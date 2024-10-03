@@ -16,6 +16,10 @@ pub fn my_func(range: Range<i32>, func: Box<dyn Fn(i32) -> i32>) -> Vec<i32> {
     res
 }
 
+/// # nanoda_func
+/// なのだをサボるな
+/// 詳しくは[これ](https://www.nicovideo.jp/watch/sm42501156?ref=nicoiphone_other)を見ろ
+/// 奈良腐女子をなめるな
 pub fn nanoda_func(msg: &String) -> String {
     format!("{}なのだ！", msg)
 }
